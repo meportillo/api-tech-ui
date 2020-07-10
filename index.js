@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 
 var app = express();
-
+app.use(cors());
 app.get('/', cors(),function (req, res) {
   res.send('Hello World!');
 });
